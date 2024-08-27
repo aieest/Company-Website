@@ -1,15 +1,34 @@
-section{
-    border: 2px solid black;
-    position: relative;
+body {
+    overflow: hidden;
+}
+
+header {
+    height: 10vh;
+    background: yellow;
+}
+
+main {
+    height: 90vh;
     width: 100vw;
-    height: 100vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    scroll-snap-type: y mandatory;
+}
+
+section{
+    outline: 2px solid black;
+    position: relative;
+    width: 100%;
+    height: 100%;
     background-color: red;
+    scroll-snap-align: end;
 }
 footer{
     position: relative;
     width: 100vw;
     height: 50vh;
     background-color: navy;
+    scroll-snap-align: start;
 }
 h1{
     font-size: 5rem;
